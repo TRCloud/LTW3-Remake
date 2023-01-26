@@ -1,10 +1,5 @@
 # 贸易专家地形生成错误修复
 
-# 锁定玩家
-effect give @a[team=playing] blindness 1000000 255 true
-effect give @a[team=playing] night_vision 1000000 255 true
-effect give @a[team=playing] slowness 1000000 255 true
-
 # 提示
 #tellraw @a[team=playing] ["\n",{"text":">> ","color":"aqua","bold":true},"检测到当前对局小游戏为 ",{"text":"贸易专家","color":"green","bold":true},"为防止出现错误, 正在尝试重新生成地形, 请稍等!"]
 

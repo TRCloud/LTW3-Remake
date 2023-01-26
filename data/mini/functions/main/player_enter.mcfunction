@@ -20,5 +20,11 @@ execute if score $mini_type mem matches 201 run function mini:ass/player_enter
 execute if score $mini_type mem matches 202 run function mini:slime/player_enter
 
 # 调用 BUG 修复函数
+execute if score $mini_type mem matches 101 run effect give @a[team=playing] blindness 1000000 255 true
+execute if score $mini_type mem matches 101 run effect give @a[team=playing] night_vision 1000000 255 true
+execute if score $mini_type mem matches 101 run effect give @a[team=playing] slowness 1000000 255 true
+execute if score $mini_type mem matches 102 run effect give @a[team=playing] blindness 1000000 255 true
+execute if score $mini_type mem matches 102 run effect give @a[team=playing] night_vision 1000000 255 true
+execute if score $mini_type mem matches 102 run effect give @a[team=playing] slowness 1000000 255 true
 execute if score $mini_type mem matches 101 run function custom:fix/iron
 execute if score $mini_type mem matches 102 run function custom:fix/trade
