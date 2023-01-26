@@ -158,7 +158,7 @@
                 "name": "stone",
                 "functions": [{
                     "function": "set_nbt",
-                    "tag": "{buy:{id:\"oak_fence_gate\",Count:1}}"
+                    "tag": "{buy:{id:\"oak_fence_gate\",Count:3}}"
                 }, {
                     "function": "set_nbt",
                     "tag": "{sell:{id:\"emerald\",Count:1}}"
