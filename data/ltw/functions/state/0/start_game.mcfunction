@@ -11,6 +11,9 @@ tellraw @a[team=playing,tag=selected_player] ["",{"text": ">> ","color": "green"
 tellraw @a[team=watching] ["",{"text": ">> ","color": "green","bold": true},{"text": "游戏开始, 你将旁观本局游戏!","color": "green"}]
 tellraw @a[team=debugging] ["",{"text": ">> ","color": "aqua","bold": true},{"text": "你正处于 Debug 模式中, 将忽略游戏开始!","color": "aqua"}]
 
+# 旁观玩家提示
+function custom:extra/lobby/spec/spec_tips
+
 # 设置数据
 scoreboard players reset * total_score
 scoreboard players set @a[team=playing] total_score 0
