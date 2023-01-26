@@ -31,15 +31,4 @@ setblock 1032 51 2000 minecraft:redstone_block
 setblock 1032 52 2032 minecraft:structure_block[mode=load]{metadata:"",mirror:"NONE",ignoreEntities:1b,powered:0b,seed:0L,author:"chengzi_SC",rotation:"NONE",posX:0,mode:"LOAD",posY:-10,sizeX:9,posZ:0,integrity:1.0f,showair:0b,name:"mini:tntrun111",sizeY:10,sizeZ:8,showboundingbox:0b}
 setblock 1032 51 2032 minecraft:redstone_block
 
-# 解锁玩家
-effect clear @a[team=playing] blindness
-effect clear @a[team=playing] night_vision
-effect clear @a[team=playing] slowness
-
-# 继续玩家加入流程
-function mini:tntrun/player_enter
-
-# 管理员提示
-#tellraw @a[team=debugging] ["\n",{"text":">> ","color":"green","bold":true},"地板生成成功, 距离正式开局还有 5s 的延迟, 请管理员自行检查是否生成成功, 下面为快捷操作命令"]
-#tellraw @a[team=debugging] ["\n",{"text":">> ","color":"green","bold":true},{"text":"[重新生成]","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/function custom:fix/tntrun"}},{"text":"[强制终止游戏]","color":"red","bold":true,"clickEvent":{"action":"run_command","value":"/function ltw:init"}}]
-#tellraw @a[team=debugging] ["\n",{"text":">> ","color":"aqua","bold":true},"本消息仅管理可见"]
+schedule function custom:fix/tntrun_fix2 30t replace
