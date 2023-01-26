@@ -8,6 +8,11 @@ effect give @a[team=playing] slowness 1000000 255 true
 # 提示
 #tellraw @a[team=playing] ["\n",{"text":">> ","color":"aqua","bold":true},"检测到当前对局小游戏为 ",{"text":"地陷圣坛","color":"red","bold":true},"为防止出现错误, 正在尝试重新生成地板, 请稍等!"]
 
+# 销毁原地形
+fill 1000 53 2000 1015 4 2039 air replace
+fill 1016 53 2000 1031 4 2039 air replace
+fill 1032 53 2000 1040 4 2039 air replace
+
 # 重新生成地形
 function mini:tntrun/game_init
 
