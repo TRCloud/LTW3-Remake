@@ -28,11 +28,6 @@ fill 1000 270 5000 1032 255 5032 air
 fill 1000 255 5001 1000 255 5000 air replace
 setblock 1028 252 5030 air replace
 
-# 解锁玩家
-effect clear @a[team=playing] blindness
-effect clear @a[team=playing] night_vision
-effect clear @a[team=playing] slowness
-
 # 继续玩家加入流程
 function mini:iron/player_enter
 
