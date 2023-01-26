@@ -12,7 +12,7 @@ execute if score $floor_generate_part mem matches 8 positioned 1000 10 4000 run 
 execute if score $floor_generate_part mem matches 9 positioned 1000 10 4000 run setblock ~ ~ ~ minecraft:structure_block{posX:1,mode:"LOAD",name:"mini:color_match/color_9",integrity:0.01f}
 execute if score $floor_generate_part mem matches 10 positioned 1000 10 4000 run setblock ~ ~ ~ minecraft:structure_block{posX:1,mode:"LOAD",name:"mini:color_match/color_10",integrity:0.01f}
 execute if score $floor_generate_part mem matches 11 positioned 1000 10 4000 run setblock ~ ~ ~ minecraft:structure_block{posX:1,mode:"LOAD",name:"mini:color_match/color_11",integrity:0.01f}
-execute if score $floor_generate_part mem matches 12 positioned 1000 10 4000 run setblock ~ ~ ~ minecraft:structure_block{posX:1,mode:"LOAD",name:"mini:color_match/color_12",integrity:0.65f}
+execute if score $floor_generate_part mem matches 12 positioned 1000 10 4000 run setblock ~ ~ ~ minecraft:structure_block{posX:1,mode:"LOAD",name:"mini:color_match/color_12",integrity:0.05f}
 # execute if score $floor_generate_part mem matches 13 positioned 1000 10 4000 run setblock ~ ~ ~ minecraft:structure_block{posX:1,mode:"LOAD",name:"mini:color_match/color_13",integrity:0.07692307692307693f}
 # execute if score $floor_generate_part mem matches 14 positioned 1000 10 4000 run setblock ~ ~ ~ minecraft:structure_block{posX:1,mode:"LOAD",name:"mini:color_match/color_14",integrity:0.07142857142857142f}
 setblock 1000 9 4000 redstone_block
