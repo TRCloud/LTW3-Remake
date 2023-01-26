@@ -11,7 +11,7 @@ execute as @e[type=villager,tag=TradeOrigin] at @s run function mini:trade/game/
 # 玩家村民生成
 execute as @a[team=playing] run function mini:trade/game/villager_init
 # 复制交易列表
-execute as @e[type=villager,tag=TradePlayer] run function mini:trade/game/villager_update_trade
+#execute as @e[type=villager,tag=TradePlayer] run function mini:trade/game/villager_update_trade
 # 村民碰撞箱处理
 team join playing @e[type=villager,tag=TradePlayer]
 

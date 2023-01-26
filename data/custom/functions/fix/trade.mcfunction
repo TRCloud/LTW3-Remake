@@ -8,8 +8,8 @@ effect give @a[team=playing] slowness 1000000 255 true
 # 提示
 #tellraw @a[team=playing] ["\n",{"text":">> ","color":"aqua","bold":true},"检测到当前对局小游戏为 ",{"text":"贸易专家","color":"green","bold":true},"为防止出现错误, 正在尝试重新生成地形, 请稍等!"]
 
-# 重新生成地形
-function mini:trade/game_init
+# 重新生成矿物
+setblock 1028 252 5030 minecraft:redstone_block
 
 # 解锁玩家
 effect clear @a[team=playing] blindness
