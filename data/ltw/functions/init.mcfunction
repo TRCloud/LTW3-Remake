@@ -178,6 +178,9 @@ function lib:bossbar/init
 # 状态
 function ltw:state/0/state_enter
 
+# TNT参数设定
+function item:tnt_data_init
+
 # 重置随机数组
 data modify storage ltw:mini types set value []
 data modify storage ltw:mini qualities set value []
