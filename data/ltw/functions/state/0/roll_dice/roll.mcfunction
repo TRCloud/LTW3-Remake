@@ -1,6 +1,6 @@
 
 # 丢骰子
-scoreboard players set $random_min mem 2
+scoreboard players set $random_min mem 1
 scoreboard players set $random_max mem 20
 function lib:random
 
