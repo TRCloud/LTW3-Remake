@@ -19,6 +19,3 @@ team join watching @s[team=!watching,team=!playing,team=!debugging]
 
 # 传送旁观者回到主大厅
 tp @s[team=watching] -11 8 -35
-
-# 重置计分板
-scoreboard players set @s switch_trigger 0
