@@ -9,13 +9,13 @@ execute as @s[team=watching] run spectate
 gamemode adventure @s[team=watching]
 gamemode spectator @s[team=!watching,team=!playing,team=!debugging]
 
-# 切换 tag
-tag @s[team=watching] remove mini_running
-tag @s[team=!watching,team=!playing,team=!debugging] add mini_running
-
 # 切换队伍
 team leave @s[team=watching]
 team join watching @s[team=!watching,team=!playing,team=!debugging]
+
+# 切换 tag
+tag @s[team=watching] remove mini_running
+tag @s[team=!watching,team=!playing,team=!debugging] add mini_running
 
 # 传送旁观者回到主大厅
 tp @s[team=watching] -11 8 -35
