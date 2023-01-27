@@ -20,7 +20,7 @@ scoreboard players reset @s slime_score
 scoreboard players set @s[team=playing] slime_score 0
 
 # 调整模式
-gamemode spectator @s[team=!debugging]
+gamemode spectator @s[team=!debugging,team=!lobby]
 gamemode adventure @s[team=playing,tag=!rejoining]
 
 # 重新加入处理

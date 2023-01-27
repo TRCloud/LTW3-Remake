@@ -20,7 +20,7 @@ team join watching @s[team=lobby]
 team join lobby @s[team=watching]
 
 # 传送旁观者回到主大厅
-tp @s[team=lobby] -11 8 -35
+tp @s[team=lobby] -10 8 -32 -113 0
 
 # 重置计分板
 scoreboard players set @s switch_trigger 0

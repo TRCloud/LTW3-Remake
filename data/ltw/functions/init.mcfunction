@@ -127,6 +127,11 @@ team modify watching color gray
 team modify watching collisionRule never
 team modify watching deathMessageVisibility never
 team modify watching seeFriendlyInvisibles false
+team add lobby "大厅"
+team modify lobby color aqua
+team modify lobby collisionRule never
+team modify lobby deathMessageVisibility never
+team modify lobby seeFriendlyInvisibles false
 
 # 非玩家队伍
 team remove white

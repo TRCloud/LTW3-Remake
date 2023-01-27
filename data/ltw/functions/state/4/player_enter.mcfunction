@@ -14,5 +14,5 @@ function mini:main/player_intro
 execute at @s run function lib:sounds/travel
 
 # 自由旁观
-gamemode spectator @s[team=!debugging]
-spectate
+gamemode spectator @s[team=!debugging,team=!lobby]
+execute as @s[team=!debugging,team=!lobby] run spectate
