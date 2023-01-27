@@ -12,6 +12,7 @@ tellraw @a[team=watching] ["",{"text": ">> ","color": "green","bold": true},{"te
 tellraw @a[team=debugging] ["",{"text": ">> ","color": "aqua","bold": true},{"text": "你正处于 Debug 模式中, 将忽略游戏开始!","color": "aqua"}]
 
 # 旁观玩家提示
+execute as @a[team=!playing] run scoreboard players set @s switch_trigger 0
 function custom:extra/lobby/spec/spec_tips
 
 # 设置数据
