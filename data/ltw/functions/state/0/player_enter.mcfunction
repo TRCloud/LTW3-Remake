@@ -11,10 +11,11 @@ recipe take @a *
 xp set @s 0 points
 xp set @s 0 levels
 
-# 开启触发器
+# 调整触发器
 scoreboard players enable @s setup_trigger
 scoreboard players set @s setup_trigger 0
 scoreboard players enable @s buy_trigger
+scoreboard players reset @s switch_trigger
 
 # 状态效果
 effect clear @s

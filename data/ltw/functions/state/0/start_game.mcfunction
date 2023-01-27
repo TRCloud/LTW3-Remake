@@ -13,6 +13,7 @@ tellraw @a[team=debugging] ["",{"text": ">> ","color": "aqua","bold": true},{"te
 
 # 旁观玩家提示
 execute as @a[team=!playing] run scoreboard players set @s switch_trigger 0
+execute as @a[team=!playing] run scoreboard players enable @s switch_trigger
 function custom:extra/lobby/spec/spec_tips
 
 # 设置数据
