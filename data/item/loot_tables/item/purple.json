@@ -36,7 +36,7 @@
                 "name": "minecraft:chest",
                 "functions": [{
                     "function": "minecraft:set_nbt",
-                    "tag": "{display:{Name:'{\"text\":\"地牢箱子\",\"italic\":false,\"color\":\"gold\"}'},item_name:'{\"text\":\"地牢箱子\",\"color\":\"gold\"}',is_bonus:1b,bonus_new:1b,bonus_return:1b,BlockEntityTag:{LootTable:\"mini:iron\"}}"
+                    "tag": "{display:{Name:'{\"text\":\"地牢箱子\",\"italic\":false,\"color\":\"gold\"}'},item_name:'{\"text\":\"地牢箱子\",\"color\":\"gold\"}',is_bonus:1b,bonus_new:1b,bonus_return:1b,BlockEntityTag:{LootTable:\"mini:diamond\"}}"
                 }]
             },
             {
