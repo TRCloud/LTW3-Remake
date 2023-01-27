@@ -9,10 +9,10 @@ execute at @a[team=playing] unless entity @e[type=slime,tag=football] run tellra
 execute at @a[team=playing] unless entity @e[type=slime,tag=football] run function mini:slime/game/summon
 
 # 给予成就
-execute as @a[team=playing,scores={slime_score=5..9}] run advancement grant @s only ltw:vs/slime1
-execute as @a[team=playing,scores={slime_score=10..14}] run advancement grant @s only ltw:vs/slime2
-execute as @a[team=playing,scores={slime_score=15..18}] run advancement grant @s only ltw:vs/slime3
-execute as @a[team=playing,scores={slime_score=20..24}] run advancement grant @s only ltw:vs/slime4
+execute as @a[team=playing,scores={slime_score=5..}] run advancement grant @s only ltw:vs/slime1
+execute as @a[team=playing,scores={slime_score=10..}] run advancement grant @s only ltw:vs/slime2
+execute as @a[team=playing,scores={slime_score=15..}] run advancement grant @s only ltw:vs/slime3
+execute as @a[team=playing,scores={slime_score=20..}] run advancement grant @s only ltw:vs/slime4
 
 ## 生成道具
 # 判断是否符合刷出新物品的条件：0 为可以，其他为不可以
