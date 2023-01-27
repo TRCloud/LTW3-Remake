@@ -11,6 +11,10 @@ tag @s remove mini_rank4
 scoreboard players reset @s total_score
 scoreboard players reset @s total_score_disp
 
+# 启用切换旁观计分板
+scoreboard players set @s switch_trigger 0
+scoreboard players enable @s switch_trigger
+
 # 重新加入阶段
 tag @s add rejoining
 execute if score $state mem matches 0 run function ltw:state/0/player_enter

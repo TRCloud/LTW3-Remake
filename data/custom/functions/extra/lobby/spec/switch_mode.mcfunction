@@ -11,7 +11,9 @@ execute if entity @s[team=lobby] run gamemode spectator @s
 
 # 切换 tag
 execute if entity @s[team=watching] run tag @s remove mini_running
+execute if entity @s[team=watching] run tag @s remove select_player
 execute if entity @s[team=lobby] run tag @s add mini_running
+execute if entity @s[team=lobby] run tag @s add select_player
 
 # 切换队伍
 execute if entity @s[team=watching] run team join watching
