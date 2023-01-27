@@ -1,6 +1,6 @@
 # 检查状态
 tag @a remove invisible
-tag @a[nbt={ActiveEffects:[{Id:14b}]}] add invisible
+tag @a[nbt={ActiveEffects:[{Id:14}]}] add invisible
 
 # 播放玩家粒子效果（他人）
 execute as @a[scores={particle_type=1},gamemode=!spectator,tag=!invisible] at @s run particle electric_spark ~ ~0.5 ~ 0.25 0.3 0.25 0 1 force @a[distance=0.01..]
