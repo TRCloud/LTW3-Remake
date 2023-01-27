@@ -74,6 +74,8 @@ scoreboard objectives remove music_time
 scoreboard objectives add music_time dummy "BGM 时间"
 scoreboard objectives remove setup_trigger
 scoreboard objectives add setup_trigger trigger "触发器_视频设置"
+scoreboard objectives remove switch_trigger
+scoreboard objectives add switch_trigger trigger "触发器_切换模式"
 scoreboard players set $ game_id 0
 scoreboard players set $ round_id 0
 
