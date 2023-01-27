@@ -16,8 +16,8 @@ tag @s[team=lobby] add mini_running
 tag @s[team=lobby] add select_player
 
 # 切换队伍
-execute if entity @s[team=watching] run team join watching
-execute if entity @s[team=lobby] run team join lobby
+execute if entity @s[team=watching] run team join watching @s
+execute if entity @s[team=lobby] run team join lobby @s
 
 # 传送旁观者回到主大厅
 tp @s[team=watching] -10 8 -32 -113 0
