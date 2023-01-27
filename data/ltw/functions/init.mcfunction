@@ -79,6 +79,7 @@ scoreboard objectives add switch_trigger trigger "触发器_切换模式"
 scoreboard players set $ game_id 0
 scoreboard players set $ round_id 0
 
+
 # 统计数据
 scoreboard objectives add stat_total dummy "总场次"
 scoreboard objectives add stat_win dummy "总胜场"
