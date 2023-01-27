@@ -19,3 +19,7 @@ execute at @s run function lib:sounds/levelup
 # 自由旁观
 gamemode spectator @s
 spectate
+
+# 启用切换旁观计分板
+scoreboard players set @s switch_trigger 0
+scoreboard players enable @s switch_trigger

@@ -17,10 +17,3 @@ execute if score $state mem matches 5 run function ltw:state/5/player_enter
 execute if score $state mem matches 6 run function ltw:state/6/player_enter
 execute if score $state mem matches 7 run function ltw:state/7/player_enter
 tag @s remove rejoining
-
-# 启用切换旁观计分板
-scoreboard players set @s switch_trigger 0
-scoreboard players enable @s switch_trigger
-
-# 显示旁观切换提醒
-execute unless score $state mem matches 0 run tellraw @s ["",{"text":">> ","bold":true,"color":"aqua"},"如果你想要回到大厅继续赌博或跑酷, 你可以点击 [",{"text":"这里","bold":true,"underlined":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger switch_trigger"}},"] 以切换模式"]
