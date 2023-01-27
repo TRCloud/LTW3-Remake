@@ -23,6 +23,3 @@ tag @s remove rejoining
 
 # 显示轮数提醒
 execute unless score $state mem matches 0 run tellraw @s ["\n",{"text":">> ","color":"aqua","bold":true},"你目前正在旁观, 游戏正在第 ",{"score": {"name": "$round","objective": "mem"},"color": "aqua"}, {"text":"/5","color": "aqua"}," 轮! 结束后你就能加入啦!\n如果等不下去的话可以使用 [/server] 命令切换其他至服务器哦!"]
-
-# 显示旁观切换提醒
-execute unless score $state mem matches 0 run tellraw @s ["",{"text":">> ","bold":true,"color":"aqua"},"如果你想要回到大厅继续赌博或跑酷, 你可以点击 [",{"text":"这里","bold":true,"underlined":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger switch_trigger"}},"] 以切换模式"]
