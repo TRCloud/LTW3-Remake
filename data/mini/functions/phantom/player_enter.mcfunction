@@ -24,7 +24,7 @@ scoreboard players reset @s countdown
 spreadplayers 1030 6031 3 3 under 18 false @s[team=playing]
 
 # 调整模式
-gamemode spectator @s[team=!debugging,team=!lobby]
+gamemode spectator @s[team=!debugging]
 gamemode adventure @s[team=playing,tag=!rejoining]
 
 # 重新加入处理

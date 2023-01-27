@@ -37,11 +37,5 @@ clear @s[team=!debugging]
 execute as @s[team=!debugging] run function item:shop/refresh_gold
 execute as @s[team=!debugging] run function item:shop/refresh_green
 
-# 加入队伍
-team join lobby @s[team=!debugging]
-
-# 删除无旁观tag
-tag @s remove no_spectate
-
 # 默认进入待机状态
 function ltw:state/0/state/join_watch

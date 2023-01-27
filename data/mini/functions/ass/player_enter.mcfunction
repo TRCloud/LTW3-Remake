@@ -19,5 +19,5 @@ scoreboard players set @s creeperUse 0
 spreadplayers 1016 7017 1 8 under 8 false @s[team=playing,tag=!rejoining]
 
 # 调整模式
-gamemode spectator @s[team=!debugging,team=!lobby]
+gamemode spectator @s[team=!debugging]
 gamemode adventure @s[team=playing,tag=!rejoining]

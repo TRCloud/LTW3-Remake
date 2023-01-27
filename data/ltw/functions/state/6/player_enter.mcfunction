@@ -22,8 +22,8 @@ function mini:main/show_result
 execute at @s run function lib:sounds/levelup
 
 # 自由旁观
-gamemode spectator @s[team=!debugging,team=!debugging]
-execute as @s[team=!debugging,team=!lobby] run spectate
+gamemode spectator @s[team=!debugging]
+spectate
 
 # 清理物品
 clear @s #mini:game_item{game_item:1b}

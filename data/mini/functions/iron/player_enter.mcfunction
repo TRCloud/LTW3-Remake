@@ -16,7 +16,7 @@ scoreboard players reset @s iron_count
 scoreboard players set @s[team=playing,tag=!rejoining] iron_count 0
 
 # 调整模式
-gamemode spectator @s[team=!debugging,team=!lobby]
+gamemode spectator @s[team=!debugging]
 gamemode survival @s[team=playing,tag=!rejoining]
 
 # 执行重生方法

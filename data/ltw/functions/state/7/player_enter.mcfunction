@@ -24,5 +24,5 @@ tag @s[tag=rejoining] remove mini_rank4
 tag @s remove selecting
 
 # 自由旁观
-gamemode spectator @s[team=!debugging,team=!lobby]
-execute as @s[team=!debugging,team=!lobby] run spectate
+gamemode spectator @s[team=!debugging]
+spectate
