@@ -5,6 +5,11 @@ execute as @a[team=!debugging] run function ltw:state/4/player_enter
 # 初始化倒计时
 scoreboard players set $countdown mem 10
 
+# 旁观玩家提示
+execute as @a[team=!playing] run scoreboard players set @s switch_trigger 0
+execute as @a[team=!playing] run scoreboard players enable @s switch_trigger
+function custom:extra/lobby/spec/spec_tips
+
 # HUD
 scoreboard objectives setdisplay belowName total_score_disp
 scoreboard objectives setdisplay sidebar total_score
