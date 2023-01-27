@@ -1,26 +1,24 @@
 # 提示
-tellraw @s[team=watching] ["",{"text":">> ","bold":true,"color":"aqua"},"你已成功切换为", {"text":"大厅模式","bold":true,"color":"aqua"}]
-tellraw @s[team=lobby] ["",{"text":">> ","bold":true,"color":"aqua"},"你已成功切换为", {"text":"大厅模式","bold":true,"color":"aqua"}]
+execute if entity @s[team=watching] run tellraw @s ["",{"text":">> ","bold":true,"color":"aqua"},"你已成功切换为", {"text":"大厅模式","bold":true,"color":"aqua"}]
+execute if entity @s[team=lobby] run tellraw @s ["",{"text":">> ","bold":true,"color":"aqua"},"你已成功切换为", {"text":"大厅模式","bold":true,"color":"aqua"}]
 
 # 解除旁观模式
-execute as @s[team=watching] run spectate
+execute if entity @s[team=watching] as @s run spectate
 
 # 切换模式
-gamemode adventure @s[team=watching]
-gamemode spectator @s[team=lobby]
+execute if entity @s[team=watching] run gamemode adventure @s
+execute if entity @s[team=lobby] run gamemode spectator @s
 
 # 切换 tag
-tag @s[team=watching] remove mini_running
-#tag @s[team=watching] add no_spectate
-tag @s[team=lobby] add mini_running
-#tag @s[team=lobby] remove no_spectate
+execute if entity @s[team=watching] run tag @s remove mini_running
+execute if entity @s[team=lobby] run tag @s add mini_running
 
 # 切换队伍
-team join watching @s[team=lobby]
-team join lobby @s[team=watching]
+execute if entity @s[team=watching] run team join watching
+execute if entity @s[team=lobby] run team join lobby @s
 
 # 传送旁观者回到主大厅
-tp @s[team=lobby] -10 8 -32 -113 0
+execute if entity @s[team=watching] run tp @s -10 8 -32 -113 0
 
 # 重置计分板
 scoreboard players set @s switch_trigger 0
