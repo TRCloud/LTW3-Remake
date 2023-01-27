@@ -20,9 +20,13 @@ scoreboard players operation $tnt_y mem += $base_y mem
 
 # 生成tnt
 summon tnt ~ ~1 ~ {Tags:["throwable_tnt","tnt_init"],Fuse:80}
+
 # 修改tnt的向量
 execute store result entity @e[tag=tnt_init,limit=1] Motion[0] double 0.00001 run scoreboard players get $tnt_x mem
 execute store result entity @e[tag=tnt_init,limit=1] Motion[1] double 0.00001 run scoreboard players get $tnt_y mem
 execute store result entity @e[tag=tnt_init,limit=1] Motion[2] double 0.00001 run scoreboard players get $tnt_z mem
 kill @e[tag=tnt_leader]
 tag @e[tag=tnt_init] remove tnt_init
+
+
+# Made by Very Yummy Cookie
