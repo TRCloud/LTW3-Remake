@@ -18,4 +18,4 @@ execute if score $player_finish mem matches 3.. run scoreboard players set #new_
 execute if score #new_item mem matches 0 run function mini:colormatch/game/new_item
 
 # TNT提示
-execute if entity @a[nbt={SelectedItem:{tag:{Tags:["tnt"]}}},tag=mini_running] run title @s actionbar {"text":"按F使用TNT"}
+# execute if entity @a[nbt={SelectedItem:{tag:{Tags:["tnt"]}}},tag=mini_running] run title @s actionbar {"text":"按F使用TNT"}
