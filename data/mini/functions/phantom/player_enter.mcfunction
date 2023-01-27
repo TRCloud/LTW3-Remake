@@ -21,7 +21,7 @@ scoreboard players reset @s use_trident
 scoreboard players reset @s countdown
 
 # 传送玩家
-spreadplayers 1030 6031 3 3 under 18 false @s[team=playing,team=!lobby]
+spreadplayers 1030 6031 3 3 under 18 false @s[team=playing]
 
 # 调整模式
 gamemode spectator @s[team=!debugging,team=!lobby]

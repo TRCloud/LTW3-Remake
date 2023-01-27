@@ -19,7 +19,7 @@ tag @s remove pm_damage_taken
 tag @s remove pm_explode_last
 
 # 传送玩家
-tp @s[team=playing,tag=!rejoining,team=!lobby] 1018.0 8 3015.0
+tp @s[team=playing,tag=!rejoining] 1018.0 8 3015.0
 
 # 调整模式
 gamemode spectator @s[team=!debugging,team=!lobby]

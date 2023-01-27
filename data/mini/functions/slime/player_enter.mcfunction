@@ -13,7 +13,7 @@ attribute @s generic.max_health base set 20
 gamerule naturalRegeneration true
 
 # 传送玩家
-tp @s[team=playing,tag=!rejoining,team=!lobby] 1018.32 7.87 10018.46 492.67 10.09
+tp @s[team=playing,tag=!rejoining] 1018.32 7.87 10018.46 492.67 10.09
 
 # 重置记分板
 scoreboard players reset @s slime_score

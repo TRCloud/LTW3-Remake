@@ -13,7 +13,7 @@ function mini:main/player_max_health
 tag @s remove colormatch_hurt
 
 # 传送玩家
-tp @s[team=playing,tag=!rejoining,team=!lobby] 1062 19 4012
+tp @s[team=playing,tag=!rejoining] 1062 19 4012
 
 # 调整模式
 gamemode spectator @s[team=!debugging,team=!lobby]
