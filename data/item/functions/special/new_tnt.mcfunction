@@ -27,5 +27,7 @@ execute store result entity @e[tag=tnt_init,limit=1] Motion[1] double 0.00001 ru
 execute store result entity @e[tag=tnt_init,limit=1] Motion[2] double 0.00001 run scoreboard players get $tnt_z mem
 tag @e[tag=tnt_init] remove tnt_init
 
+# 清除TNT物品
+
 
 # Made by Very Yummy Cookie
