@@ -11,7 +11,7 @@ scoreboard players operation $tnt_x mem -= $tnt_px mem
 scoreboard players operation $tnt_y mem -= $tnt_py mem
 scoreboard players operation $tnt_z mem -= $tnt_pz mem
 
-# 接受参数 与 y轴坐标 的基础值
+# 接受参数 与 Y轴坐标 的基础值
 scoreboard players operation $tnt_x mem *= $multiplier_x mem
 scoreboard players operation $tnt_y mem *= $multiplier_y mem
 scoreboard players operation $tnt_z mem *= $multiplier_z mem
@@ -20,14 +20,15 @@ scoreboard players operation $tnt_y mem += $base_y mem
 
 # 生成tnt
 summon tnt ~ ~1 ~ {Tags:["throwable_tnt","tnt_init"],Fuse:80}
-
+scoreboard players set $tnt_countdown mem 80
 # 修改tnt的向量
 execute store result entity @e[tag=tnt_init,limit=1] Motion[0] double 0.00001 run scoreboard players get $tnt_x mem
-execute store result entity @e[tag=tnt_init,limit=1] Motion[1] double 0.00001 run scoreboard players get $tnt_y mem
+execute store result entity @e[tag=tnt_init,limit=1] Motion[1] double 0.0000085 run scoreboard players get $tnt_y mem
 execute store result entity @e[tag=tnt_init,limit=1] Motion[2] double 0.00001 run scoreboard players get $tnt_z mem
 tag @e[tag=tnt_init] remove tnt_init
+kill @e[tag=tnt_leader]
 
 # 清除TNT物品
-
+item replace entity @a[nbt={Inventory:[{id:"minecraft:tnt",Slot:-106b}]},tag=mini_running] weapon.offhand with air 1
 
 # Made by Very Yummy Cookie
