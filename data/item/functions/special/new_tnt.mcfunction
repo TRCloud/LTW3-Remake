@@ -29,6 +29,5 @@ tag @e[tag=tnt_init] remove tnt_init
 kill @e[tag=tnt_leader]
 
 # 清除TNT物品
-item replace entity @a[nbt={Inventory:[{id:"minecraft:tnt",Slot:-106b}]},tag=mini_running] weapon.offhand with air 1
-
+clear @a[nbt={Inventory:[{id:"minecraft:tnt",Slot:-106b}]},tag=mini_running] tnt 1
 # Made by Very Yummy Cookie

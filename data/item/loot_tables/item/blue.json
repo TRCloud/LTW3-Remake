@@ -78,10 +78,11 @@
             },
             {
                 "type": "minecraft:item",
-                "weight": 10,
+                "weight": 12,
                 "name": "minecraft:tnt",
                 "functions": [{
                     "function": "minecraft:set_nbt",
+                    "count": 4,
                     "tag": "{item_name:'{\"text\":\"<按F使用> TNT\",\"color\":\"light_purple\"}',is_bonus:1b,bonus_new:1b,bonus_return:1b,tags:[\"tnt\"],display:{Name:'{\"text\":\"<按F使用> TNT\",\"italic\":false,\"HideFlags\":\"63b\",\"Enchantments\":[{\"id\":\"efficiency\",\"lvl\":1}],\"color\":\"light_purple\"}'}}"
                 }]
             },
@@ -105,7 +106,7 @@
                 "name": "minecraft:diamond_pickaxe",
                 "functions": [{
                     "function": "minecraft:set_nbt",
-                    "tag": "{item_name:'{\"text\":\"<效率 I> 钻石镐\",\"color\":\"light_purple\"}',is_bonus:1b,bonus_new:1b,bonus_return:1b,\"Enchantments\":[{id:\"efficiency\",\"lvl\":1}],display:{Name:'{\"text\":\"<效率 I> 钻石镐\",\"italic\":false,\"color\":\"light_purple\"}'}}"
+                    "tag": "{item_name:'{\"text\":\"<效率 I> 钻石镐\",\"color\":\"light_purple\"}',is_bonus:1b,bonus_new:1b,bonus_return:1b,\"Enchantments\":[{id:\"efficiency\",\"lvl\":1}],display:{Lore:['{\"text\":\"投掷并没有冷却!\n小心不要全部丢出去了哦!\",\"italic\":false,\"color\":\"gray\"}'],Name:'{\"text\":\"<效率 I> 钻石镐\",\"italic\":false,\"color\":\"light_purple\"}'}}"
                 }]
             },
             {
