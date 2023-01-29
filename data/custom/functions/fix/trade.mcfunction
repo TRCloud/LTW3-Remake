@@ -4,7 +4,7 @@
 #tellraw @a[team=playing] ["\n",{"text":">> ","color":"aqua","bold":true},"检测到当前对局小游戏为 ",{"text":"贸易专家","color":"green","bold":true},"为防止出现错误, 正在尝试重新生成地形, 请稍等!"]
 
 # 重新生成地形
-function mini:trade/game_init
+execute if entity @s[tag=mini_running,team=playing,gamemode=!spectator] run function mini:trade/game_init
 
 # 继续玩家加入流程
 function mini:trade/player_enter
