@@ -74,6 +74,27 @@
                 "name": "stone",
                 "functions": [{
                     "function": "set_nbt",
+                    "tag": "{buy:{id:\"coal_block\",Count:1}}"
+                }, {
+                    "function": "set_nbt",
+                    "tag": "{sell:{id:\"emerald\",Count:2}}"
+                }],
+                "conditions": [{
+                    "condition": "inverted",
+                    "term": {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "nbt": "{Offers:{Recipes:[{buy:{id:\"minecraft:coal_block\"}}]}}"
+                        }
+                    }
+                }]
+            },
+            {
+                "type": "item",
+                "name": "stone",
+                "functions": [{
+                    "function": "set_nbt",
                     "tag": "{buy:{id:\"lava_bucket\",Count:1}}"
                 }, {
                     "function": "set_nbt",
