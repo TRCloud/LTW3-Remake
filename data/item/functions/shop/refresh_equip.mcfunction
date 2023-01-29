@@ -42,4 +42,5 @@ item replace entity @s[scores={shop_06_armor=4}] armor.feet with netherite_boots
 # 07
 clear @s fishing_rod
 give @s[scores={shop_07_fish=1}] fishing_rod{display:{Name:'{"text":"一次性钓鱼竿","italic":false,"color":"gray"}'},Damage:64}
-give @s[scores={shop_07_fish=2..}] fishing_rod{display:{Name:'{"text":"钓鱼竿","italic":false,"color":"white"}'},Damage:60}
+give @s[scores={shop_07_fish=2}] fishing_rod{display:{Name:'{"text":"钓鱼竿","italic":false,"color":"white"}'},Damage:60}
+give @s[scores={shop_07_fish=3..}] fishing_rod{display:{Name:'{"text":"钓鱼竿","italic":false,"color":"white"}'},Damage:50}

@@ -25,7 +25,7 @@ execute if score @s buy_trigger matches 064 if score $state mem matches 0 run fu
 execute if score @s buy_trigger matches 071 if score $state mem matches 0 run function item:shop/buy/071_fish
 execute if score @s buy_trigger matches 072 if score $state mem matches 0 run function item:shop/buy/072_fish
 execute if score @s buy_trigger matches 073 if score $state mem matches 0 run function item:shop/buy/073_fish
-execute if score @s buy_trigger matches 074 if score $state mem matches 0 run function item:shop/buy/074_fish
+
 # 隐藏商店
 execute if score @s buy_trigger matches 101 if score $state mem matches 0 run function item:shop/buy/101_hint
 execute if score @s buy_trigger matches 102 if score $state mem matches 0 run function item:shop/buy/102_bgm
