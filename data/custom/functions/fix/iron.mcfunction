@@ -4,7 +4,7 @@
 #tellraw @a[team=playing] ["\n",{"text":">> ","color":"aqua","bold":true},"检测到当前对局小游戏为 ",{"text":"钢铁狂潮","color":"aqua","bold":true},"为防止出现错误, 正在尝试重新生成地形, 请稍等!"]
 
 # 重新生成地形
-function mini:iron/game_init
+execute if entity @s[tag=mini_running,team=playing,gamemode=!spectator] run function mini:iron/game_init
 
 # 继续玩家加入流程
 function mini:iron/player_enter

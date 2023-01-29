@@ -20,14 +20,15 @@ scoreboard players operation $tnt_y mem += $base_y mem
 
 # 生成tnt
 summon tnt ~ ~1 ~ {Tags:["throwable_tnt","tnt_init"],Fuse:80}
-scoreboard players set $tnt_countdown mem 80
+# 添加倒计时
+scoreboard players set @s tnt_countdown 80
 # 修改tnt的向量
 execute store result entity @e[tag=tnt_init,limit=1] Motion[0] double 0.00001 run scoreboard players get $tnt_x mem
-execute store result entity @e[tag=tnt_init,limit=1] Motion[1] double 0.0000085 run scoreboard players get $tnt_y mem
+execute store result entity @e[tag=tnt_init,limit=1] Motion[1] double 0.0000075 run scoreboard players get $tnt_y mem
 execute store result entity @e[tag=tnt_init,limit=1] Motion[2] double 0.00001 run scoreboard players get $tnt_z mem
 tag @e[tag=tnt_init] remove tnt_init
 kill @e[tag=tnt_leader]
 
 # 清除TNT物品
-clear @a[nbt={Inventory:[{id:"minecraft:tnt",Slot:-106b}]},tag=mini_running] tnt 1
+clear @s[nbt={Inventory:[{id:"minecraft:tnt",Slot:-106b}]},tag=mini_running] tnt 1
 # Made by Very Yummy Cookie
