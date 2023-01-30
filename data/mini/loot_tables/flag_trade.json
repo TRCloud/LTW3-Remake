@@ -1,0 +1,12 @@
+{
+    "type": "entity",
+    "functions": [{
+        "function": "set_nbt",
+        "tag": "{TradeItem:1b,maxUses:1}"
+    }],
+    "pools": [{
+        "rolls": 1,
+        "entries": [
+
+        ]
+}]}
