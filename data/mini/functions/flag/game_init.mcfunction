@@ -19,6 +19,7 @@ gamerule drowningDamage true
 # Gamerule 调整
 gamerule doLimitedCrafting false
 gamerule keepInventory true
+gamerule mobGriefing true
 gamerule doTileDrops true
 gamerule doEntityDrops true
 gamerule doMobLoot true

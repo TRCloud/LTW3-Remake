@@ -35,6 +35,8 @@ setblock 0 1 0 minecraft:acacia_wall_sign[facing=north]
 setblock 0 1 1 stone
 
 # 记分板
+scoreboard objectives remove fireball_countdown
+scoreboard objectives add fireball_countdown dummy "火球倒计时"
 scoreboard objectives remove flag
 scoreboard objectives add flag dummy "旗帜数量"
 scoreboard objectives remove tnt_countdown
