@@ -37,10 +37,12 @@ setblock 0 1 1 stone
 # 记分板
 scoreboard objectives remove fireball_countdown
 scoreboard objectives add fireball_countdown dummy "火球倒计时"
+scoreboard players add @a fireball_countdown 0
 scoreboard objectives remove flag
 scoreboard objectives add flag dummy "旗帜数量"
 scoreboard objectives remove tnt_countdown
 scoreboard objectives add tnt_countdown dummy "TNT倒计时"
+scoreboard players add @a tnt_countdown 0
 scoreboard objectives remove temp
 scoreboard objectives add temp dummy
 scoreboard objectives remove temp2
