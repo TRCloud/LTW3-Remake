@@ -18,6 +18,7 @@ execute if score $mini_type mem matches 4 run function mini:colormatch/player_en
 execute if score $mini_type mem matches 5 run function mini:phantom/player_enter
 execute if score $mini_type mem matches 201 run function mini:ass/player_enter
 execute if score $mini_type mem matches 202 run function mini:slime/player_enter
+execute if score $mini_type mem matches 103 run function mini:flag/player_enter
 
 # 调用 BUG 修复函数
 execute if score $mini_type mem matches 101 run function custom:fix/iron

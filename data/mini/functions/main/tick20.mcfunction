@@ -9,6 +9,7 @@ execute if score $mini_type mem matches 101 run function mini:iron/tick20
 execute if score $mini_type mem matches 102 run function mini:trade/tick20
 execute if score $mini_type mem matches 201 run function mini:ass/tick20
 execute if score $mini_type mem matches 202 run function mini:slime/tick20
+execute if score $mini_type mem matches 103 run function mini:flag/tick20
 
 # 结束游戏判定
 function mini:main/check_game_end

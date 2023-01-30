@@ -7,3 +7,4 @@ execute if score $mini_type mem matches 101 run function mini:iron/tick1
 execute if score $mini_type mem matches 102 run function mini:trade/tick1
 execute if score $mini_type mem matches 201 run function mini:ass/tick1
 execute if score $mini_type mem matches 202 run function mini:slime/tick1
+execute if score $mini_type mem matches 103 run function mini:flag/tick1
