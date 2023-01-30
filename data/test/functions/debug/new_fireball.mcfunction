@@ -17,7 +17,7 @@ scoreboard players operation $temp_y debug_test *= $2 mem
 scoreboard players operation $temp_z debug_test *= $2 mem
 
 # 生成tnt
-summon fireball ~ ~1 ~ {Tags:["fireball_fly","fireball_init"]}
+summon fireball ~ ~1 ~ {Tags:["fireball_fly","fireball_init"],CustomName:'["火球"]',CustomNameVisible:1b,Glowing:1b,ExplosionPower:5b}
 # 修改tnt的向量
 execute store result entity @e[tag=fireball_init,limit=1] power[0] double 0.00001 run scoreboard players get $temp_x debug_test
 execute store result entity @e[tag=fireball_init,limit=1] power[1] double 0.00001 run scoreboard players get $temp_y debug_test
