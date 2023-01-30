@@ -1,6 +1,6 @@
 /data modify block -1 7 -52 Text1 set value '{"text":""}'
 /data modify block -1 7 -52 Text3 set value '{"clickEvent":{"action":"run_command","value":"/trigger buy_trigger set "},"text":""}'
-/data modify block 0 7 -40 Text4 set value '{"clickEvent":{"action":"run_command","value":"/trigger buy_trigger set 73"},"text":"8 金锭"}'
+/data modify block 0 7 -40 Text4 set value '{"clickEvent":{"action":"run_command","value":"/trigger buy_trigger set 74"},"text":"8 金锭"}'
 /data modify block 0 7 -40 Text2 set value '{"text":"耐久度 + 10"}'
 /data modify block 0 7 -40 Text1 set value '{"text":"[ 升级 ]"}'
 
