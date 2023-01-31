@@ -1,12 +1,70 @@
 {
     "type": "entity",
-    "functions": [{
-        "function": "set_nbt",
-        "tag": "{TradeItem:1b,maxUses:1}"
-    }],
     "pools": [{
         "rolls": 1,
-        "entries": [
+        "entries": [{
+            "type": "item",
+            "name": "ender_pearl",
+            "functions": [{
+                "function": "set_nbt",
+                "tag": "{buy:{id:\"emerald\",Count:2}}"
+            }, {
+                "function": "set_nbt",
+                "tag": "{sell:{id:\"ender_pearl\",Count:1}}"
+            }],
+            "conditions": [{
+                "condition": "inverted",
+                "term": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "nbt": "{Offers:{Recipes:[{buy:{id:\"minecraft:emerald\"}}]}}"
+                    }
+                }
+            }]
+        },
+        {
+            "type": "item",
+            "name": "tnt",
+            "functions": [{
+                "function": "set_nbt",
+                "tag": "{buy:{id:\"emerald\",Count:2}}"
+            }, {
+                "function": "set_nbt",
+                "tag": "{sell:{id:\"tnt\",Count:2}}"
+            }],
+            "conditions": [{
+                "condition": "inverted",
+                "term": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "nbt": "{Offers:{Recipes:[{buy:{id:\"minecraft:emerald\"}}]}}"
+                    }
+                }
+            }]
+        },
+        {
+            "type": "item",
+            "name": "fire_charge",
+            "functions": [{
+                "function": "set_nbt",
+                "tag": "{buy:{id:\"iron_ingot\",Count:2}}"
+            }, {
+                "function": "set_nbt",
+                "tag": "{sell:{id:\"fire_charge\",Count:2}}"
+            }],
+            "conditions": [{
+                "condition": "inverted",
+                "term": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "nbt": "{Offers:{Recipes:[{buy:{id:\"minecraft:iron_ingot\"}}]}}"
+                    }
+                }
+            }]
+        }
 
         ]
 }]}
