@@ -1,0 +1,12 @@
+- center_island 标记中心岛
+- secondary_island 标记次级岛
+- resource_island 标记资源岛
+    - wood_resource_island 标记木材资源岛
+    - diamond_resource_island 标记钻石资源岛
+    - iron_resource_island 标记铁矿资源岛
+    - mines_resource_island 标记矿场资源岛
+- player_island 标记玩家岛
+- shop_island 标记商店岛
+
+- generating 生成中
+- island 标记岛

@@ -1,0 +1,1 @@
+function mini:flag/init/postion_island/_prepare_pos

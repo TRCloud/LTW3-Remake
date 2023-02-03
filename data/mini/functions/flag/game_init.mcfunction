@@ -20,7 +20,6 @@ gamerule doEntityDrops true
 gamerule doMobLoot true
 
 # 注入常量
-scoreboard players set $2 mem 100
-
+scoreboard players set #2 mem 100
 
 schedule function mini:flag/game_init2 5t replace

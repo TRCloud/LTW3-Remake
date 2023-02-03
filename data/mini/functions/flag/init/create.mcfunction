@@ -1,0 +1,1 @@
+execute as @e[tag=main_island,limit=1] at @s run function mini:flag/init/game_init 
